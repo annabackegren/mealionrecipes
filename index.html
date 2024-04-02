@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="The number one place online for recipes!"
+    />
+    <!-- Show icon on tab, icon from "https://looka.com". AI-generated based on
+      personally selected requirements -->
+    <title>MealionRecipes.com</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <a id="linkNav" href="index.html">
+        <!--Src logo "https://looka.com" AI-generated based on
+      personally selected requirements. -->
+        <img src="Images/logo-nav.png" alt="Till startsidan." id="logo" />
+      </a>
+    </nav>
+    <main>
+      <div id="shadowBox">
+        <h1>Make your search and embark on a culinary journey!</h1>
+        <div class="line"></div>
+        <p id="text">
+          Please make one of the following choices to search for a recipe.
+        </p>
+        <p>
+          You can either search for a category, or you can choose to search for
+          any ingredient you may like to find in your recipe.
+        </p>
+        <div id="flexSearch">
+          <div class="flexDiv">
+            <ul class="searchCategory">
+              <li>
+                <input
+                  id="checkVegetarian"
+                  type="radio"
+                  name="searchFor"
+                  value="vegetarian"
+                />
+                <label for="checkVegetarian">Vegetarian</label>
+              </li>
+              <li>
+                <input
+                  id="checkVegan"
+                  type="radio"
+                  name="searchFor"
+                  value="vegan"
+                />
+                <label for="checkVegan">Vegan</label>
+              </li>
+            </ul>
+          </div>
+          <div class="flexDiv">
+            <ul class="searchCategory">
+              <li>
+                <input
+                  id="checkSeafood"
+                  type="radio"
+                  name="searchFor"
+                  value="seafood"
+                />
+                <label for="checkSeafood">Seafood</label>
+              </li>
+              <li>
+                <input
+                  id="checkMeat"
+                  type="radio"
+                  name="searchFor"
+                  value="meat"
+                />
+                <label for="checkMeat">Meat</label>
+              </li>
+            </ul>
+          </div>
+          <div class="flexDiv">
+            <ul class="searchCategory">
+              <li>
+                <input
+                  id="checkBreakfast"
+                  type="radio"
+                  name="searchFor"
+                  value="breakfast"
+                />
+                <label for="checkBreakfast">Breakfast</label>
+              </li>
+              <li>
+                <input
+                  id="checkDessert"
+                  type="radio"
+                  name="searchFor"
+                  value="dessert"
+                />
+                <label for="checkDessert">Dessert</label>
+              </li>
+            </ul>
+          </div>
+          <div class="flexDiv">
+            <div>
+              <input
+                id="checkIngredient"
+                type="radio"
+                name="searchFor"
+                value="ingredient"
+              />
+              <label for="checkIngredient">Ingredient</label>
+            </div>
+            <input
+              id="searchBar"
+              type="text"
+              placeholder="Write your ingredient here"
+            />
+          </div>
+        </div>
+
+        <div id="flexButtons">
+          <input id="resetButton" type="button" value="Reset" />
+          <input id="surpriseButton" type="button" value="Give me five!" />
+          <input id="searchButton" type="button" value="Search" />
+        </div>
+      </div>
+      <div class="line"></div>
+
+      <div id="searchResult"></div>
+      <div id="noResult">
+        <p>
+          Sorry, but we couldn't find any recipes for you. Please try again with
+          another search.
+        </p>
+        <img
+          id="noResultImg"
+          src="Images/noResultImg.jpg"
+          alt="empty notebook"
+        />
+      </div>
+
+      <img id="blankPageImg" src="Images/blankPageImg.png" alt="fruit" />
+
+      <script src="index.js"></script>
+    </main>
+
+    <footer>©MealionRecipes.com</footer>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+/* Font downloaded from fonts.google.com */
+@font-face {
+  font-family: MontserratAlternates;
+  src: url(SourceCodePro-VariableFont_wght.ttf);
+}
+/* --------------------------navbar-------------------------- */
+nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+}
+#logo {
+  height: 130px;
+  width: 100vw;
+}
+
+/* --------------------------general css-------------------------- */
+body {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 137px auto 5%;
+  align-items: baseline;
+  margin: 0;
+  font-family: MontserratAlternates, "Times New Roman", Times, serif;
+  background-image: linear-gradient(to right, #10090c, #302a2c);
+}
+main {
+  grid-area: main;
+  text-align: center;
+  margin: 0 10%;
+  min-height: 100vh;
+  background-color: #dba173;
+  padding-bottom: 5%;
+}
+#text {
+  margin: 0 20%;
+  margin-bottom: 1rem;
+}
+.line {
+  border-bottom: 3px double #000000;
+  margin: 1rem 10%;
+}
+#flexSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: first baseline;
+}
+.flexDiv {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#flexButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 15rem;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+.searchCategory {
+  text-align: left;
+  list-style-type: none;
+}
+.limit {
+  padding: 0 40px;
+  max-width: 600px;
+  margin: auto;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+#searchBar {
+  border-radius: 5px;
+  width: auto;
+}
+#blankPageImg {
+  margin: auto;
+  height: 23rem;
+  opacity: 0.8;
+  filter: grayscale(30%) drop-shadow(5px 5px rgb(38, 57, 77));
+}
+#noResult {
+  /* margin-top: 1rem; */
+  margin: 1rem 25%;
+}
+#noResultImg {
+  margin-top: 2rem;
+  height: 12rem;
+  border-radius: 10%;
+}
+/* --------------The list of #searchResult------------------- */
+#searchResult {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.resultBox {
+  width: 200px;
+  margin: 25px;
+  border-radius: 20%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  /* Inspiration for box-shadow from https://getcssscan.com/css-box-shadow-examples */
+}
+#nameInResult {
+  height: 3rem;
+}
+#resultBoxImg {
+  max-width: 150px;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+  width: 100%;
+}
+#resultBoxImg:hover {
+  opacity: 0.5;
+}
+/* ---------Full Recipe---------- */
+#recipeImg {
+  width: 15rem;
+  float: right;
+  border-radius: 50%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-bottom: 1rem;
+}
+#youtubeImg {
+  margin-top: 1rem;
+  width: 8rem;
+  border-radius: 50%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#fullList {
+  text-align: left;
+  list-style-type: none;
+}
+#instructions {
+  text-align: left;
+  margin-top: 3rem;
+}
+
+/* ------------------------------footer------------------------------ */
+footer {
+  grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-image: linear-gradient(to right, #10090c, #302a2c);
+  color: #c89064;
+  text-align: center;
+}
